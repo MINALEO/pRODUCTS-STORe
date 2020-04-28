@@ -1,3 +1,5 @@
 name: spotbot
 
-o
+on:
+  push:
+    br
