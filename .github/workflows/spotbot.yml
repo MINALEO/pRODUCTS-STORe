@@ -2,4 +2,4 @@ name: spotbot
 
 on:
   push:
-    br
+    branches:
