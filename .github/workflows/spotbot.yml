@@ -3,4 +3,7 @@ name: spotbot
 on:
   push:
     branches:
-      - 'maste
+      - 'master'
+
+jobs:
+  bu
