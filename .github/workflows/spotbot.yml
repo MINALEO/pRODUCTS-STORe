@@ -11,4 +11,4 @@ jobs:
     steps:
       -
         name: Checkout
-        uses
+        uses: actions/check
