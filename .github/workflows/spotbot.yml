@@ -23,4 +23,5 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Build and push
-        uses: docker/build-push-actio
+        uses: docker/build-push-action@v3
+        wi
