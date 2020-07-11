@@ -546,3 +546,16 @@ dependencies = [
  "once_cell",
  "parking_lot_core 0.9.5",
 ]
+
+[[package]]
+name = "der"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6919815d73839e7ad218de758883aae3a257ba6759ce7a9992501efbb53d705c"
+dependencies = [
+ "const-oid",
+]
+
+[[package]]
+name = "derive_builder"
+version = "0.11.2"
