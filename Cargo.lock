@@ -1316,3 +1316,15 @@ dependencies = [
  "tracing",
  "zeroize",
 ]
+
+[[package]]
+name = "matrix-sdk-common"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b85a6a743cc9dcf9385e61a26db78276078beddd27f3762d9d82baa2030695f1"
+dependencies = [
+ "async-lock",
+ "futures-core",
+ "futures-util",
+ "instant",
+ "ruma",
