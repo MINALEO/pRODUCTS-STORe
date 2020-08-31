@@ -1263,3 +1263,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cbeafb4809f33f377165f2fbcf10e0613053ad206762194c3050a727fd3abcb2"
 dependencies = [
  "anymap2",
+ "async-once-cell",
+ "async-stream",
+ "async-trait",
+ "backoff",
+ "bytes",
+ "dashmap",
+ "derive_builder",
+ "event-listener",
+ "futures-core",
+ "futures-signals",
+ "futures-util",
+ "http",
+ "matrix-sdk-base",
