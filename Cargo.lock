@@ -1291,3 +1291,16 @@ dependencies = [
  "wasm-timer",
  "zeroize",
 ]
+
+[[package]]
+name = "matrix-sdk-base"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b944f6d1fc8779ba790dd0b942ceff45c626c1f5da847f01122d355ad06511bd"
+dependencies = [
+ "async-stream",
+ "async-trait",
+ "dashmap",
+ "futures-channel",
+ "futures-core",
+ "futures-signals",
