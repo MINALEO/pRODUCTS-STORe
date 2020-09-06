@@ -1328,3 +1328,11 @@ dependencies = [
  "futures-util",
  "instant",
  "ruma",
+ "serde",
+ "tokio",
+ "wasm-bindgen-futures",
+ "wasm-timer",
+]
+
+[[package]]
+name = "matrix-sdk-crypto"
