@@ -1336,3 +1336,18 @@ dependencies = [
 
 [[package]]
 name = "matrix-sdk-crypto"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "68fa699e8dd54578a4b92e3fcd18a50da8e415a0c042da1706b0330fc2d8f949"
+dependencies = [
+ "aes",
+ "async-trait",
+ "atomic",
+ "base64",
+ "byteorder",
+ "ctr",
+ "dashmap",
+ "event-listener",
+ "futures-util",
+ "hmac",
+ "matrix-sdk-common",
