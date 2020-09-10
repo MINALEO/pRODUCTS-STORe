@@ -1358,3 +1358,16 @@ dependencies = [
  "serde_json",
  "sha2 0.10.6",
  "thiserror",
+ "tokio",
+ "tracing",
+ "vodozemac",
+ "zeroize",
+]
+
+[[package]]
+name = "matrix-sdk-indexeddb"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7847d36bba832bc787214323bc042b71dca7fdf2aee9f0e3eb573b64f2f7eb7f"
+dependencies = [
+ "anyhow",
