@@ -1395,3 +1395,12 @@ name = "matrix-sdk-sled"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5ded5a703ad8a82b8edfde808228711315c8761a5fbf7ac2b98ab4951dadd066"
+dependencies = [
+ "async-stream",
+ "async-trait",
+ "dashmap",
+ "derive_builder",
+ "fs_extra",
+ "futures-core",
+ "futures-util",
+ "matrix-sdk-base",
