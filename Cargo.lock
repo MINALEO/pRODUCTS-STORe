@@ -1427,3 +1427,19 @@ dependencies = [
  "displaydoc",
  "hmac",
  "pbkdf2",
+ "rand 0.8.5",
+ "serde",
+ "serde_json",
+ "sha2 0.10.6",
+ "thiserror",
+ "zeroize",
+]
+
+[[package]]
+name = "maybe-async"
+version = "0.2.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6007f9dad048e0a224f27ca599d669fca8cfa0dac804725aab542b2eb032bce6"
+dependencies = [
+ "proc-macro2",
+ "quote",
