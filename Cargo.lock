@@ -1594,3 +1594,10 @@ dependencies = [
  "autocfg",
  "cc",
  "libc",
+ "pkg-config",
+ "vcpkg",
+]
+
+[[package]]
+name = "parking"
+version = "2.0.0"
