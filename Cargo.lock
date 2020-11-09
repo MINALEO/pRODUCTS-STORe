@@ -1954,3 +1954,9 @@ dependencies = [
 
 [[package]]
 name = "rspotify"
+version = "0.11.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a86007448fb9a88a0677fd332addf8e7c1057e67bc385d3477c8d44c1bb0e96f"
+dependencies = [
+ "async-stream",
+ "async-trait",
