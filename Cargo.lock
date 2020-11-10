@@ -1971,3 +1971,14 @@ dependencies = [
  "rspotify-model",
  "serde",
  "serde_json",
+ "sha2 0.10.6",
+ "thiserror",
+ "url",
+ "webbrowser",
+]
+
+[[package]]
+name = "rspotify-http"
+version = "0.11.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "aa7481b3155d1ee3a0a73f94148d3385487e519b795d418ec0df1588961c1105"
