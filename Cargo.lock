@@ -1982,3 +1982,20 @@ name = "rspotify-http"
 version = "0.11.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "aa7481b3155d1ee3a0a73f94148d3385487e519b795d418ec0df1588961c1105"
+dependencies = [
+ "async-trait",
+ "log",
+ "maybe-async",
+ "reqwest",
+ "serde_json",
+ "thiserror",
+]
+
+[[package]]
+name = "rspotify-macros"
+version = "0.11.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0c86521fc751c75235937f0014dfb17e67f8abc6461b28ad82c9c2acc33a0c47"
+
+[[package]]
+name = "rspotify-model"
