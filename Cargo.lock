@@ -2040,3 +2040,18 @@ dependencies = [
  "ruma-common",
  "serde",
  "serde_json",
+]
+
+[[package]]
+name = "ruma-common"
+version = "0.10.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "716889595f4edc3cfeb94d9f122e413f73e37d7d80ea1c14196e1004241a3889"
+dependencies = [
+ "base64",
+ "bytes",
+ "form_urlencoded",
+ "getrandom 0.2.8",
+ "http",
+ "indexmap",
+ "itoa",
