@@ -2067,3 +2067,20 @@ dependencies = [
  "serde",
  "serde_json",
  "thiserror",
+ "tracing",
+ "url",
+ "uuid 1.2.2",
+ "wildmatch",
+]
+
+[[package]]
+name = "ruma-federation-api"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9f905d12f6144c7a754bd0339fa6893698c03d03a908abb20cc6eeb4ec7f9466"
+dependencies = [
+ "js_int",
+ "ruma-common",
+ "serde",
+ "serde_json",
+]
