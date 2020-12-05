@@ -2084,3 +2084,18 @@ dependencies = [
  "serde",
  "serde_json",
 ]
+
+[[package]]
+name = "ruma-identifiers-validation"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "eabac62d16465a87435579c779d74dceabb93b09e44c766af6085050f3cc4275"
+dependencies = [
+ "js_int",
+ "thiserror",
+]
+
+[[package]]
+name = "ruma-macros"
+version = "0.10.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
