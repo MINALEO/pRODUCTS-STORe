@@ -2099,3 +2099,17 @@ dependencies = [
 name = "ruma-macros"
 version = "0.10.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0f82e91eb61cd86d9287303133ee55b54618eccb75a522cc22a42c15f5bda340"
+dependencies = [
+ "once_cell",
+ "proc-macro-crate",
+ "proc-macro2",
+ "quote",
+ "ruma-identifiers-validation",
+ "serde",
+ "syn",
+ "toml",
+]
+
+[[package]]
+name = "rustc-serialize"
