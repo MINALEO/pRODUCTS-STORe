@@ -2312,3 +2312,12 @@ version = "0.5.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "44d01ac02a6ccf3e07db148d2be087da624fea0221a16152ed01f0496a6b0a27"
 dependencies = [
+ "der",
+]
+
+[[package]]
+name = "spotbot"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "dotenv",
