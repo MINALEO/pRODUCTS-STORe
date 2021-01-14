@@ -2352,3 +2352,10 @@ dependencies = [
  "heck",
  "proc-macro2",
  "quote",
+ "rustversion",
+ "syn",
+]
+
+[[package]]
+name = "subtle"
+version = "2.4.1"
