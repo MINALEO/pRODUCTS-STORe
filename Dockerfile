@@ -1,1 +1,1 @@
-FROM rust:slim
+FROM rust:slim-bullseye as bu
