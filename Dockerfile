@@ -1,3 +1,3 @@
 FROM rust:slim-bullseye as builder
 
-RUN a
+RUN apt-get update
