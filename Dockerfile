@@ -1,1 +1,1 @@
-FR
+FROM rust:slim
