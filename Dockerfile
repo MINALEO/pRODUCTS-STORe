@@ -1,1 +1,3 @@
-FROM rust:slim-bullseye as bu
+FROM rust:slim-bullseye as builder
+
+RUN a
