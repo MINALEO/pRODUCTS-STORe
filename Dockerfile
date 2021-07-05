@@ -1,4 +1,5 @@
 FROM rust:slim-bullseye as builder
 
 RUN apt-get update \
-    && apt-get install -y --no-install-r
+    && apt-get install -y --no-install-recommends \
+ 
