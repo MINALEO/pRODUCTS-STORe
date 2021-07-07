@@ -4,4 +4,4 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         pkg-config \
         libssl-dev \
-    && rm -rf /var/li
+    && rm -rf /var/lib/apt/list
