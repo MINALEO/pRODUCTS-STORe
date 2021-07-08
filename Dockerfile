@@ -6,4 +6,4 @@ RUN apt-get update \
         libssl-dev \
     && rm -rf /var/lib/apt/lists/*
 
-WOR
+WORKDIR /usr/src/spo
