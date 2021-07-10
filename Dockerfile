@@ -7,4 +7,5 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/spotbot
-COPY .
+COPY . .
+RUN cargo 
