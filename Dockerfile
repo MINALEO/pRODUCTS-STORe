@@ -6,4 +6,5 @@ RUN apt-get update \
         libssl-dev \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /usr/src/spo
+WORKDIR /usr/src/spotbot
+COPY .
