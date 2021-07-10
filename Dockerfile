@@ -8,4 +8,6 @@ RUN apt-get update \
 
 WORKDIR /usr/src/spotbot
 COPY . .
-RUN cargo install --path
+RUN cargo install --path .
+
+FROM debian:
