@@ -8,4 +8,4 @@ RUN apt-get update \
 
 WORKDIR /usr/src/spotbot
 COPY . .
-RUN cargo 
+RUN cargo install --path
