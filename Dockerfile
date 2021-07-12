@@ -10,4 +10,6 @@ WORKDIR /usr/src/spotbot
 COPY . .
 RUN cargo install --path .
 
-FROM debian:bullseye-
+FROM debian:bullseye-slim
+
+RUN ap
