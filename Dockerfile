@@ -12,4 +12,5 @@ RUN cargo install --path .
 
 FROM debian:bullseye-slim
 
-RUN ap
+RUN apt-get update \
+    
