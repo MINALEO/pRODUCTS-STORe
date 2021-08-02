@@ -19,4 +19,5 @@ RUN apt-get update \
 
 COPY --from=builder /usr/local/cargo/bin/spotbot /usr/local/bin/spotbot
 
-WOR
+WORKDIR /spotbot
+CM
