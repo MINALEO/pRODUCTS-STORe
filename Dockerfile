@@ -17,4 +17,4 @@ RUN apt-get update \
         ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-COPY --from=builder /usr/local/carg
+COPY --from=builder /usr/local/cargo/bin/spotbot /usr/loc
