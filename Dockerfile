@@ -20,4 +20,4 @@ RUN apt-get update \
 COPY --from=builder /usr/local/cargo/bin/spotbot /usr/local/bin/spotbot
 
 WORKDIR /spotbot
-CM
+CMD ["spo
