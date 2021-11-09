@@ -24,3 +24,14 @@ All arguments here are passed to the
 and `spotbot` will queue the first search result.
 
 ```
+kwarf: !q Vertex - Get Down
+spotbot: Queued: Vertex - Get Down
+kwarf: !q fire and flames
+spotbot: Queued: DragonForce - Through The Fire And Flames
+```
+
+### !q _track-URL_
+
+If the search pattern matches the regular expression `https://open.spotify.com/track/([^\?]+)` that URL will be queued
+immediately without performing a search. This can be useful if a user wants to queue a niche track that is hard to
+search for.
