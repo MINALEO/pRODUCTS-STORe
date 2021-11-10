@@ -35,3 +35,18 @@ spotbot: Queued: DragonForce - Through The Fire And Flames
 If the search pattern matches the regular expression `https://open.spotify.com/track/([^\?]+)` that URL will be queued
 immediately without performing a search. This can be useful if a user wants to queue a niche track that is hard to
 search for.
+
+```
+kwarf: !q https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT?si=d351ea353d404342
+spotbot: Queued: Rick Astley - Never Gonna Give You Up
+```
+
+# Running
+
+I recommend running `spotbot` using my Docker image unless you have a specific reason not to. The following
+`docker-compose.yml` can be used as a starting point where you replace the
+[environment variables](#environment-variables) with your own.
+
+```yml
+version: '3'
+services:
