@@ -50,3 +50,11 @@ I recommend running `spotbot` using my Docker image unless you have a specific r
 ```yml
 version: '3'
 services:
+  spotbot:
+    image: kwarf/spotbot
+    volumes:
+      - ./spotbot:/spotbot
+    environment:
+      - MATRIX_HOMESERVER_URL=https://matrix-client.matrix.org
+      - MATRIX_USERNAME=...
+      - MATRIX_PASSWORD=...
