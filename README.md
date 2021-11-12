@@ -71,3 +71,7 @@ docker compose run -i spotbot
 ```
 
 You will be prompted to navigate to a Spotify URL, copy this and then paste it into your browser. This will show a
+prompt asking you to allow `spotbot` to access your account, with the permissions shown on that page.
+
+Click _Agree_ and you will be redirected to a URL that will not be found _(localhost:8000)_. This is fine and expected,
+simply copy that URL from your browsers address bar and paste it into the running container where it's promping
