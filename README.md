@@ -58,3 +58,16 @@ services:
       - MATRIX_HOMESERVER_URL=https://matrix-client.matrix.org
       - MATRIX_USERNAME=...
       - MATRIX_PASSWORD=...
+      - MATRIX_ROOM_ID=...
+      - RSPOTIFY_CLIENT_ID=...
+      - RSPOTIFY_CLIENT_SECRET=...
+      - RSPOTIFY_REDIRECT_URI=http://localhost:8000/callback
+```
+
+Since the Spotify API uses OAuth you will have to run the container interactively the first time to generate a token.
+
+```sh
+docker compose run -i spotbot
+```
+
+You will be prompted to navigate to a Spotify URL, copy this and then paste it into your browser. This will show a
