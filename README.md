@@ -75,3 +75,16 @@ prompt asking you to allow `spotbot` to access your account, with the permission
 
 Click _Agree_ and you will be redirected to a URL that will not be found _(localhost:8000)_. This is fine and expected,
 simply copy that URL from your browsers address bar and paste it into the running container where it's promping
+_"Please enter the URL you were redirected to:"_ and hit enter.
+
+It should now show _Connected to Spotify_ followed shortly by _Joined \<your room id\>_. The access token should now
+have been saved as `./spotbot/.spotify_token_cache.json`, so you can now exit the container with Ctrl+C, and then
+re-start it as a regular detached background container with:
+
+```sh
+docker compose up -d
+```
+
+# Environment variables
+
+### MATRIX_HOMESERVER_URL
