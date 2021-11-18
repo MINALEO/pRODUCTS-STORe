@@ -99,3 +99,10 @@ The account username and password that you want your bot to sign in with.
 
 This is the _ID_ of the room you want the bot to join. It can be found in the regular `Element` client by going to
 `Room options -> Settings -> Advanced` and is in a format like `!qporfwt:matrix.org`.
+
+### RSPOTIFY_CLIENT_ID / RSPOTIFY_CLIENT_SECRET
+
+In order to access the Spotify API, a client ID and secret are needed.
+
+1. Go to https://developer.spotify.com/dashboard/applications
+1. Click _Create an app_ then enter something descriptive like `spotbot` as the name and click _Create_
