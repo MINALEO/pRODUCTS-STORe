@@ -88,3 +88,14 @@ docker compose up -d
 # Environment variables
 
 ### MATRIX_HOMESERVER_URL
+
+This should be your home server URL, `https://matrix-client.matrix.org` for accounts on `matrix.org`.
+
+### MATRIX_USERNAME / MATRIX_PASSWORD
+
+The account username and password that you want your bot to sign in with.
+
+### MATRIX_ROOM_ID
+
+This is the _ID_ of the room you want the bot to join. It can be found in the regular `Element` client by going to
+`Room options -> Settings -> Advanced` and is in a format like `!qporfwt:matrix.org`.
