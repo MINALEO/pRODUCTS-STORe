@@ -106,3 +106,9 @@ In order to access the Spotify API, a client ID and secret are needed.
 
 1. Go to https://developer.spotify.com/dashboard/applications
 1. Click _Create an app_ then enter something descriptive like `spotbot` as the name and click _Create_
+1. Your `Client ID` and `Client Secret` are now shown.
+1. Click _Edit settings_ and add `http://localhost:8000/callback` to _Redirect URIs_ then _Save_
+
+### RSPOTIFY_REDIRECT_URI
+
+This is the URL you will be redirected to after accepting the permissions during initial authentication.
