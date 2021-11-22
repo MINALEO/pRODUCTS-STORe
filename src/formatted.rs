@@ -1,2 +1,2 @@
 use anyhow::Error;
-use mat
+use matrix_sdk::ruma::event
