@@ -1,3 +1,3 @@
 use anyhow::Error;
 use matrix_sdk::ruma::events::room::message::RoomMessageEventContent;
-use rspotify::{model::Full
+use rspotify::{model::FullTrack, C
