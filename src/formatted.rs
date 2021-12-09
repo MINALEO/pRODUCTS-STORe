@@ -7,4 +7,5 @@ pub fn track(track: &FullTrack) -> String {
         "{} - {}",
         track
             .artists
-   
+            .iter()
+ 
