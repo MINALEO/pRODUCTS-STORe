@@ -6,4 +6,5 @@ pub fn track(track: &FullTrack) -> String {
     format!(
         "{} - {}",
         track
-       
+            .artists
+   
