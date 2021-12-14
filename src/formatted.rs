@@ -8,4 +8,5 @@ pub fn track(track: &FullTrack) -> String {
         track
             .artists
             .iter()
-            .map(|artist| &artist
+            .map(|artist| &artist.name)
+     
