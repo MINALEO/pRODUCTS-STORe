@@ -9,4 +9,5 @@ pub fn track(track: &FullTrack) -> String {
             .artists
             .iter()
             .map(|artist| &artist.name)
-            .fold(String::new(), |a, b| a + &b + ", "
+            .fold(String::new(), |a, b| a + &b + ", ")
+            
