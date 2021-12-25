@@ -12,4 +12,7 @@ pub fn track(track: &FullTrack) -> String {
             .fold(String::new(), |a, b| a + &b + ", ")
             .trim_end_matches(", "),
         track.name
-    
+    )
+}
+
+pu
