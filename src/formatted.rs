@@ -15,4 +15,4 @@ pub fn track(track: &FullTrack) -> String {
     )
 }
 
-pub async fn error(error: Error)
+pub async fn error(error: Error) -> Room
