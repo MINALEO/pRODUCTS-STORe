@@ -15,4 +15,5 @@ pub fn track(track: &FullTrack) -> String {
     )
 }
 
-pub async fn error(error: Error) -> RoomMessageEventContent
+pub async fn error(error: Error) -> RoomMessageEventContent {
+    match 
