@@ -17,4 +17,4 @@ pub fn track(track: &FullTrack) -> String {
 
 pub async fn error(error: Error) -> RoomMessageEventContent {
     match error.downcast::<ClientError>() {
-        Ok(ClientError::Http(http)) 
+        Ok(ClientError::Http(http)) => match 
