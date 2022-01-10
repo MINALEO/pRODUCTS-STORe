@@ -19,4 +19,4 @@ pub async fn error(error: Error) -> RoomMessageEventContent {
     match error.downcast::<ClientError>() {
         Ok(ClientError::Http(http)) => match *http {
             rspotify::http::HttpError::StatusCode(error) => {
-        
+                RoomMessa
