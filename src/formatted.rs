@@ -21,4 +21,4 @@ pub async fn error(error: Error) -> RoomMessageEventContent {
             rspotify::http::HttpError::StatusCode(error) => {
                 RoomMessageEventContent::text_markdown(format!(
                     "```\n{}\n{}\n```",
-       
+                  
