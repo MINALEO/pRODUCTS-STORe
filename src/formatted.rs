@@ -22,4 +22,5 @@ pub async fn error(error: Error) -> RoomMessageEventContent {
                 RoomMessageEventContent::text_markdown(format!(
                     "```\n{}\n{}\n```",
                     error.status(),
-                    error.text().await.unw
+                    error.text().await.unwrap()
+    
