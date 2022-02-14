@@ -24,3 +24,4 @@ pub async fn error(error: Error) -> RoomMessageEventContent {
                     error.status(),
                     error.text().await.unwrap()
                 ))
+        
