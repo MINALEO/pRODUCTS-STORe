@@ -25,4 +25,5 @@ pub async fn error(error: Error) -> RoomMessageEventContent {
                     error.text().await.unwrap()
                 ))
             }
-            rspotify::http::HttpError::Client
+            rspotify::http::HttpError::Client(_) => todo!(),
+     
