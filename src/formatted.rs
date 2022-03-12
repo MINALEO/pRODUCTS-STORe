@@ -27,4 +27,4 @@ pub async fn error(error: Error) -> RoomMessageEventContent {
             }
             rspotify::http::HttpError::Client(_) => todo!(),
         },
-        Ok(e) => RoomMessageEventContent:
+        Ok(e) => RoomMessageEventContent::text_pla
