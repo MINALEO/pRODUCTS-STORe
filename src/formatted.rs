@@ -29,3 +29,5 @@ pub async fn error(error: Error) -> RoomMessageEventContent {
         },
         Ok(e) => RoomMessageEventContent::text_plain(e.to_string()),
         Err(e) => RoomMessageEventContent::text_plain(e.to_string()),
+    }
+}
