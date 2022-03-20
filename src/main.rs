@@ -8,3 +8,19 @@ use matrix_sdk::{
     event_handler::Ctx,
     room::Room,
     ruma::{
+        events::room::message::{
+            MessageType, OriginalSyncRoomMessageEvent, RoomMessageEventContent,
+        },
+        RoomId,
+    },
+    Client,
+};
+use regex::Regex;
+use rspotify::model::{FullTrack, TrackId};
+use spotify::SpotifyClient;
+
+mod formatted;
+mod spotify;
+
+lazy_static! {
+    static ref RX_TRACK_URL: Regex =
