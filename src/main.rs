@@ -32,3 +32,14 @@ async fn get_queue_handler(spotify: &SpotifyClient) -> anyhow::Result<RoomMessag
         .get_queue()
         .await?
         .iter()
+        .map(|x| formatted::track(x))
+        .fold(String::new(), |a, b| a + &b + "\n");
+
+    Ok(RoomMessageEventContent::text_markdown(format!(
+        "```\n{}\n```",
+        tracks.trim_end()
+    )))
+}
+
+async fn get_track_handler(
+    spotify: &SpotifyClient,
