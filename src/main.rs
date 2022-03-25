@@ -24,3 +24,11 @@ mod spotify;
 
 lazy_static! {
     static ref RX_TRACK_URL: Regex =
+        Regex::new(r"https://open.spotify.com/track/([^\?]+)").unwrap();
+}
+
+async fn get_queue_handler(spotify: &SpotifyClient) -> anyhow::Result<RoomMessageEventContent> {
+    let tracks = spotify
+        .get_queue()
+        .await?
+        .iter()
