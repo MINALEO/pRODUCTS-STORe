@@ -43,3 +43,11 @@ async fn get_queue_handler(spotify: &SpotifyClient) -> anyhow::Result<RoomMessag
 
 async fn get_track_handler(
     spotify: &SpotifyClient,
+    id: &str,
+) -> anyhow::Result<RoomMessageEventContent> {
+    let track = spotify
+        .get_track(TrackId::from_id_or_uri(id).unwrap())
+        .await?;
+
+    queue_track(spotify, &track).await
+}
