@@ -70,3 +70,19 @@ async fn queue_track(
     track: &FullTrack,
 ) -> anyhow::Result<RoomMessageEventContent> {
     spotify.queue_track(track).await?;
+
+    Ok(RoomMessageEventContent::text_plain(format!(
+        "Queued: {}",
+        formatted::track(track)
+    )))
+}
+
+async fn on_room_message(
+    event: OriginalSyncRoomMessageEvent,
+    room: Room,
+    spotify: Ctx<SpotifyClient>,
+) {
+    if let Room::Joined(room) = room {
+        let MessageType::Text(message) = event.content.msgtype else {
+            return;
+        };
