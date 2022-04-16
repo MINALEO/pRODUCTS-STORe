@@ -86,3 +86,15 @@ async fn on_room_message(
         let MessageType::Text(message) = event.content.msgtype else {
             return;
         };
+
+        if !message.body.starts_with("!q") {
+            return;
+        }
+
+        let response = if message.body == "!q" {
+            Some(get_queue_handler(&spotify).await)
+        } else if let Some(c) = RX_TRACK_URL.captures(&message.body) {
+            Some(get_track_handler(&spotify, c.get(1).map(|x| x.as_str()).unwrap()).await)
+        } else if let Some(search_term) = message.body.get(3..) {
+            Some(search_track_handler(&spotify, search_term).await)
+        } else {
