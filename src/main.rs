@@ -51,3 +51,12 @@ async fn get_track_handler(
 
     queue_track(spotify, &track).await
 }
+
+async fn search_track_handler(
+    spotify: &SpotifyClient,
+    search_term: &str,
+) -> anyhow::Result<RoomMessageEventContent> {
+    match spotify.search_track(search_term).await? {
+        Some(track) => queue_track(spotify, &track).await,
+        None => Ok(RoomMessageEventContent::text_plain(format!(
+            "No tracks found matching: \"{}\"",
