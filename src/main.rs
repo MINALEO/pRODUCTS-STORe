@@ -98,3 +98,10 @@ async fn on_room_message(
         } else if let Some(search_term) = message.body.get(3..) {
             Some(search_track_handler(&spotify, search_term).await)
         } else {
+            None
+        };
+
+        match response {
+            Some(Ok(message)) => {
+                room.send(message, None).await.unwrap();
+            }
