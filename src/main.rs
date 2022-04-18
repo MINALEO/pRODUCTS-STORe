@@ -118,3 +118,15 @@ async fn main() -> anyhow::Result<()> {
     dotenv().ok();
 
     let homeserver_url = env::var("MATRIX_HOMESERVER_URL").expect("MATRIX_HOMESERVER_URL not set");
+    let username = env::var("MATRIX_USERNAME").expect("MATRIX_USERNAME not set");
+    let password = env::var("MATRIX_PASSWORD").expect("MATRIX_PASSWORD not set");
+    let room_id = env::var("MATRIX_ROOM_ID").expect("MATRIX_ROOM_ID not set");
+    let room_id: &str = &room_id;
+    let spotify = spotify::login().await?;
+
+    let client = Client::builder()
+        .homeserver_url(homeserver_url)
+        .build()
+        .await?;
+
+    client.login_username(&username, &password).send().await?;
