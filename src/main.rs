@@ -130,3 +130,16 @@ async fn main() -> anyhow::Result<()> {
         .await?;
 
     client.login_username(&username, &password).send().await?;
+
+    let room_id = <&RoomId>::try_from(room_id).unwrap();
+    let response = client.sync_once(SyncSettings::default()).await?;
+    client.add_event_handler_context(spotify);
+    client.add_room_event_handler(room_id, on_room_message);
+    client.join_room_by_id(room_id).await?;
+    println!("Joined {}", room_id);
+
+    let settings = SyncSettings::default().token(response.next_batch);
+    client.sync(settings).await?;
+
+    Ok(())
+}
