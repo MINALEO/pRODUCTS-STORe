@@ -105,3 +105,16 @@ async fn on_room_message(
             Some(Ok(message)) => {
                 room.send(message, None).await.unwrap();
             }
+            Some(Err(e)) => {
+                room.send(formatted::error(e).await, None).await.unwrap();
+            }
+            None => (),
+        }
+    }
+}
+
+#[tokio::main]
+async fn main() -> anyhow::Result<()> {
+    dotenv().ok();
+
+    let homeserver_url = env::var("MATRIX_HOMESERVER_URL").expect("MATRIX_HOMESERVER_URL not set");
