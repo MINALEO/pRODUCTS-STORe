@@ -1,3 +1,3 @@
 use anyhow::Context;
 use rspotify::{
-    model::{FullTrack, Market, PlayableI
+    model::{FullTrack, Market, PlayableItem, Sea
