@@ -2,4 +2,4 @@ use anyhow::Context;
 use rspotify::{
     model::{FullTrack, Market, PlayableItem, SearchResult, SearchType, TrackId},
     prelude::{BaseClient, OAuthClient, PlayableId::Track},
-    scopes, AuthCodeSpotify, Config, C
+    scopes, AuthCodeSpotify, Config, Credenti
