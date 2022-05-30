@@ -5,4 +5,5 @@ use rspotify::{
     scopes, AuthCodeSpotify, Config, Credentials, OAuth,
 };
 
-#[derive(Clone)
+#[derive(Clone)]
+pub struct Sp
