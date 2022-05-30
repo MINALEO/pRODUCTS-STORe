@@ -4,3 +4,5 @@ use rspotify::{
     prelude::{BaseClient, OAuthClient, PlayableId::Track},
     scopes, AuthCodeSpotify, Config, Credentials, OAuth,
 };
+
+#[derive(Clone)
