@@ -6,4 +6,5 @@ use rspotify::{
 };
 
 #[derive(Clone)]
-pub struct SpotifyClient 
+pub struct SpotifyClient {
+    
