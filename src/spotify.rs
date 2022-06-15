@@ -10,4 +10,4 @@ pub struct SpotifyClient {
     client: AuthCodeSpotify,
 }
 
-pub 
+pub async f
