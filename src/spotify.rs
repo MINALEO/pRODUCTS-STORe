@@ -8,3 +8,6 @@ use rspotify::{
 #[derive(Clone)]
 pub struct SpotifyClient {
     client: AuthCodeSpotify,
+}
+
+pub 
