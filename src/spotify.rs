@@ -11,4 +11,4 @@ pub struct SpotifyClient {
 }
 
 pub async fn login() -> anyhow::Result<SpotifyClient> {
-    let cre
+    let creds = Credential
