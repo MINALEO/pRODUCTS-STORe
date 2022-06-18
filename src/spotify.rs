@@ -10,4 +10,4 @@ pub struct SpotifyClient {
     client: AuthCodeSpotify,
 }
 
-pub async fn login() 
+pub async fn login() -> anyhow::Result
