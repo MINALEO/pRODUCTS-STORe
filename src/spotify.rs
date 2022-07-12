@@ -13,4 +13,4 @@ pub struct SpotifyClient {
 pub async fn login() -> anyhow::Result<SpotifyClient> {
     let creds = Credentials::from_env().unwrap();
     let oauth = OAuth::from_env(scopes!(
-    
+        "user-mo
