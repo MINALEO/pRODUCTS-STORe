@@ -15,4 +15,4 @@ pub async fn login() -> anyhow::Result<SpotifyClient> {
     let oauth = OAuth::from_env(scopes!(
         "user-modify-playback-state",
         "user-read-currently-playing",
-        
+        "user-read-pl
