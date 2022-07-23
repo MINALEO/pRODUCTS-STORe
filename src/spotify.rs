@@ -16,4 +16,6 @@ pub async fn login() -> anyhow::Result<SpotifyClient> {
         "user-modify-playback-state",
         "user-read-currently-playing",
         "user-read-playback-state",
-        "user-read-pri
+        "user-read-private"
+    ))
+ 
