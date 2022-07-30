@@ -18,4 +18,4 @@ pub async fn login() -> anyhow::Result<SpotifyClient> {
         "user-read-playback-state",
         "user-read-private"
     ))
- 
+    .unwra
