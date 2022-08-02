@@ -19,4 +19,5 @@ pub async fn login() -> anyhow::Result<SpotifyClient> {
         "user-read-private"
     ))
     .unwrap();
-    let config = C
+    let config = Config {
+        t
