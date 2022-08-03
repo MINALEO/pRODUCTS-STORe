@@ -20,4 +20,5 @@ pub async fn login() -> anyhow::Result<SpotifyClient> {
     ))
     .unwrap();
     let config = Config {
-        token_cached
+        token_cached: true,
+        t
