@@ -25,4 +25,4 @@ pub async fn login() -> anyhow::Result<SpotifyClient> {
         ..Default::default()
     };
 
-    let spotify = AuthCodeS
+    let spotify = AuthCodeSpotify::wi
