@@ -26,4 +26,5 @@ pub async fn login() -> anyhow::Result<SpotifyClient> {
     };
 
     let spotify = AuthCodeSpotify::with_config(creds, oauth, config);
-    let url = spotify.get_authorize_url(fal
+    let url = spotify.get_authorize_url(false)?;
+    s
