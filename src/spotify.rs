@@ -27,4 +27,6 @@ pub async fn login() -> anyhow::Result<SpotifyClient> {
 
     let spotify = AuthCodeSpotify::with_config(creds, oauth, config);
     let url = spotify.get_authorize_url(false)?;
-    spotify.prompt_for_token(&url)
+    spotify.prompt_for_token(&url).await?;
+
+  
