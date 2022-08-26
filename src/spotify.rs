@@ -30,4 +30,5 @@ pub async fn login() -> anyhow::Result<SpotifyClient> {
     spotify.prompt_for_token(&url).await?;
 
     println!("Connected to Spotify");
-    Ok(SpotifyClient { clien
+    Ok(SpotifyClient { client: spotify })
+}
