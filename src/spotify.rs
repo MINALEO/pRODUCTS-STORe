@@ -33,4 +33,5 @@ pub async fn login() -> anyhow::Result<SpotifyClient> {
     Ok(SpotifyClient { client: spotify })
 }
 
-impl SpotifyClient 
+impl SpotifyClient {
+    pub asyn
