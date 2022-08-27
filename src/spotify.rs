@@ -34,4 +34,4 @@ pub async fn login() -> anyhow::Result<SpotifyClient> {
 }
 
 impl SpotifyClient {
-    pub asyn
+    pub async fn get_track<'a
