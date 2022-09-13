@@ -40,4 +40,4 @@ impl SpotifyClient {
         Ok(result)
     }
 
-    pub a
+    pub async fn search_
