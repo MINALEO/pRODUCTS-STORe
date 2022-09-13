@@ -37,4 +37,7 @@ impl SpotifyClient {
     pub async fn get_track<'a>(&self, id: TrackId<'a>) -> anyhow::Result<FullTrack> {
         let result = self.client.track(id).await?;
 
-        Ok(resul
+        Ok(result)
+    }
+
+    pub a
