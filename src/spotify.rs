@@ -40,4 +40,5 @@ impl SpotifyClient {
         Ok(result)
     }
 
-    pub async fn search_track(&self, args: &str) -> anyhow::Result<Option<FullTrac
+    pub async fn search_track(&self, args: &str) -> anyhow::Result<Option<FullTrack>> {
+        
