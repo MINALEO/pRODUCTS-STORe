@@ -42,4 +42,4 @@ impl SpotifyClient {
 
     pub async fn search_track(&self, args: &str) -> anyhow::Result<Option<FullTrack>> {
         let result = self
-   
+            
