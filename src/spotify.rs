@@ -44,3 +44,4 @@ impl SpotifyClient {
         let result = self
             .client
             .search(
+               
