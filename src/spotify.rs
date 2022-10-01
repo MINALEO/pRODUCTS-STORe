@@ -45,4 +45,5 @@ impl SpotifyClient {
             .client
             .search(
                 args,
-                Sear
+                SearchType::Track,
+  
