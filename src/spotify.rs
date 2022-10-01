@@ -46,4 +46,4 @@ impl SpotifyClient {
             .search(
                 args,
                 SearchType::Track,
-  
+                S
