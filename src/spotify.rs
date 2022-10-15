@@ -48,3 +48,4 @@ impl SpotifyClient {
                 SearchType::Track,
                 Some(Market::FromToken),
                 None,
+         
