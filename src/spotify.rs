@@ -50,4 +50,5 @@ impl SpotifyClient {
                 None,
                 Some(1),
                 None,
-            
+            )
+            .awai
