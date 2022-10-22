@@ -53,4 +53,5 @@ impl SpotifyClient {
             )
             .await?;
 
-        Ok(matc
+        Ok(match result {
+      
