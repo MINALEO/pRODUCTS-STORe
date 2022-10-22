@@ -51,4 +51,6 @@ impl SpotifyClient {
                 Some(1),
                 None,
             )
-            .awai
+            .await?;
+
+        Ok(matc
