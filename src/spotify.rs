@@ -54,4 +54,4 @@ impl SpotifyClient {
             .await?;
 
         Ok(match result {
-      
+            SearchR
