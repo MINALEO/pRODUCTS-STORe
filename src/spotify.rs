@@ -54,4 +54,4 @@ impl SpotifyClient {
             .await?;
 
         Ok(match result {
-            SearchResult::Track
+            SearchResult::Tracks(track
