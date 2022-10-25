@@ -55,4 +55,4 @@ impl SpotifyClient {
 
         Ok(match result {
             SearchResult::Tracks(tracks) => match tracks.items.len() {
-    
+                0 =
