@@ -59,4 +59,5 @@ impl SpotifyClient {
                 _ => Some(tracks.items[0].clone()),
             },
             _ => None,
-  
+        })
+    
