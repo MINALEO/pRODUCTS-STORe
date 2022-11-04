@@ -60,4 +60,6 @@ impl SpotifyClient {
             },
             _ => None,
         })
-    
+    }
+
+    pub asy
