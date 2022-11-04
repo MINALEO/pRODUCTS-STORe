@@ -62,4 +62,4 @@ impl SpotifyClient {
         })
     }
 
-    pub asy
+    pub async fn queue
