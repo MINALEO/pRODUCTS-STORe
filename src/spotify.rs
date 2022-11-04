@@ -62,4 +62,4 @@ impl SpotifyClient {
         })
     }
 
-    pub async fn queue
+    pub async fn queue_track(&self, t
