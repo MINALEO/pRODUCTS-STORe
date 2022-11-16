@@ -63,4 +63,4 @@ impl SpotifyClient {
     }
 
     pub async fn queue_track(&self, track: &FullTrack) -> anyhow::Result<()> {
-  
+        let track_id
