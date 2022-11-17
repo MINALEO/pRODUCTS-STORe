@@ -66,3 +66,4 @@ impl SpotifyClient {
         let track_id = Track(
             track
                 .id
+              
