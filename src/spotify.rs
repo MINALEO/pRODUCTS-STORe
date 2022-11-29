@@ -67,4 +67,4 @@ impl SpotifyClient {
             track
                 .id
                 .clone()
-            
+                .conte
