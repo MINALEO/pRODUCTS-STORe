@@ -68,4 +68,6 @@ impl SpotifyClient {
                 .id
                 .clone()
                 .context("Attempted to queue track without ID")?,
-  
+        );
+
+     
