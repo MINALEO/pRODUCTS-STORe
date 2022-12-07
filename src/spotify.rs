@@ -70,4 +70,4 @@ impl SpotifyClient {
                 .context("Attempted to queue track without ID")?,
         );
 
-     
+        self.
