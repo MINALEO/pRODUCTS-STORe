@@ -70,4 +70,4 @@ impl SpotifyClient {
                 .context("Attempted to queue track without ID")?,
         );
 
-        self.client.add_item_to_queue(track_id, None)
+        self.client.add_item_to_queue(track_id, None).await?;
