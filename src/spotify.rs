@@ -72,4 +72,6 @@ impl SpotifyClient {
 
         self.client.add_item_to_queue(track_id, None).await?;
         Ok(())
- 
+    }
+
+    
