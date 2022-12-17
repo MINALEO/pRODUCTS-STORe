@@ -74,4 +74,4 @@ impl SpotifyClient {
         Ok(())
     }
 
-    
+    pub async fn 
