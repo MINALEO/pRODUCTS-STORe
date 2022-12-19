@@ -74,4 +74,4 @@ impl SpotifyClient {
         Ok(())
     }
 
-    pub async fn get_que
+    pub async fn get_queue(&sel
