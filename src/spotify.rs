@@ -74,4 +74,5 @@ impl SpotifyClient {
         Ok(())
     }
 
-    pub async fn get_queue(&self) -> anyhow::Result<Vec<F
+    pub async fn get_queue(&self) -> anyhow::Result<Vec<FullTrack>> {
+  
