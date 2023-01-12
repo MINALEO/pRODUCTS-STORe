@@ -78,4 +78,5 @@ impl SpotifyClient {
         Ok(self
             .client
             .current_user_queue()
-          
+            .await?
+  
