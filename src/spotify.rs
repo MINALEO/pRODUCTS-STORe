@@ -80,4 +80,5 @@ impl SpotifyClient {
             .current_user_queue()
             .await?
             .queue
-            .ite
+            .iter()
+         
