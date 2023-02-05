@@ -81,4 +81,4 @@ impl SpotifyClient {
             .await?
             .queue
             .iter()
-            .filter_map(|x|
+            .filter_map(|x| match x {
