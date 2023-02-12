@@ -82,4 +82,4 @@ impl SpotifyClient {
             .queue
             .iter()
             .filter_map(|x| match x {
-                PlayableItem::
+                PlayableItem::Track(track) => So
