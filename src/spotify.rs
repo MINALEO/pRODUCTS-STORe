@@ -82,4 +82,5 @@ impl SpotifyClient {
             .queue
             .iter()
             .filter_map(|x| match x {
-                PlayableItem::Track(track) => Some(track.to_o
+                PlayableItem::Track(track) => Some(track.to_owned()),
+      
