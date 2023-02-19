@@ -83,4 +83,4 @@ impl SpotifyClient {
             .iter()
             .filter_map(|x| match x {
                 PlayableItem::Track(track) => Some(track.to_owned()),
-                Pla
+                PlayableItem::Episo
