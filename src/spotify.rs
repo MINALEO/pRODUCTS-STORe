@@ -85,4 +85,6 @@ impl SpotifyClient {
                 PlayableItem::Track(track) => Some(track.to_owned()),
                 PlayableItem::Episode(_) => None,
             })
-            .collect::<Vec<FullT
+            .collect::<Vec<FullTrack>>())
+    }
+}
